@@ -1,0 +1,6 @@
+flask
+flask_restful
+flask_session
+redis
+pymongo
+schema

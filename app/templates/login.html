@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/login.css">
+{% endblock %}
+{% block content %}
+<div id="login-app">{{ email }}
+    <input id="email" type="email" placeholder="Email" v-model="email">
+    <input id="password" type="password" placeholder="Password"  v-model="password">
+    <button id="submit" v-on:click="login_submit()">Login</button>
+</div>
+<script src="/static/login.js"></script>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Memory List{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+{% endblock %}
+{% block content %}
+<div id="app">
+  <ul id="memory-item-list">
+    <memory-item v-for="m in memories" :title="m.title" :time="local_time(m.time)" :id="m.id" ></memory-item>
+  </ul>
+</div>
+<div id="memory-app">
+    <memory v-model="memory" :title="memory.title" :user="memory.user" :time="local_time(memory.time)" :id="memory.id" :text="memory.text"></memory>
+</div>
+<script src="/static/app.js"></script>
+{% endblock %}

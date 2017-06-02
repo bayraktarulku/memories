@@ -1,0 +1,77 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background: #340034;
+}
+
+body {
+    margin: 0;
+}
+
+.memory-item {
+    list-style-type: none;
+    height: 96px;
+    width: calc(100% - 32px);
+    background: #340034;
+    padding: 16px;
+    font-family: urw;
+}
+
+.memory-item:hover {
+    opacity: 0.7;
+}
+
+.memory-item-title {
+    font-size: 48px;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    word-break: keep-all;
+    color: #BEA6CF;
+}
+
+.owned {
+    background: red;
+}
+
+.memory-item-date {
+    font-size: 24px;
+    color: #733C96;
+}
+.memory-item:hover .memory-item-date {
+    color: #BEA6CF;
+}
+
+#memory-item-list {
+    width: 100%;
+    padding: 0;
+    margin: 1px;
+    background: white;
+}
+
+@font-face {
+    font-family: urw;
+    src: url('/static/fonts/URW++ - URWGeometricCond-ThinOblique.otf');
+}
+
+@media (max-width: 700px) {
+    .memory-item-title {
+        font-size: 48px;
+        display: inline-block;
+        width: 100%;
+    }
+/*    .memory-item-date {
+        display: none;
+    }*/
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
